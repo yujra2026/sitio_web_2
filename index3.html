@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teorías del Wired | Wired Terminal</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <header class="wired-header">
+        <h1 class="logo">&lt;WIRED_NODE // FORUM&gt;</h1>
+        <nav class="wired-nav">
+            <ul>
+                <li><a href="index.html">/inicio</a></li>
+                <li><a href="index2.html">/personajes</a></li>
+                <li><a href="index3.html" class="active">/teorias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="wired-card">
+            <span class="status-tag">[FORUM: USER_THEORIES]</span>
+            <h2>Publica tu Teoría sobre el Wired</h2>
+            <p class="description">Deja tu análisis sobre la trama, la conciencia o la existencia de Lain.</p>
+
+            <form id="theory-form" class="wired-form">
+                <input type="text" id="user-name" placeholder="Tu Alias / ID en el Wired" required>
+                <textarea id="theory-text" rows="4" placeholder="Escribe tu teoría aquí..." required></textarea>
+                <button type="submit" class="wired-btn">Enviar al Wired</button>
+            </form>
+
+            <div class="theories-container">
+                <h3>Teorías Transmitidas:</h3>
+                <div id="theories-list">
+                    <!-- Las teorías aparecerán aquí -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="wired-footer">
+        <p>PRESENT DAY // PRESENT TIME</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
